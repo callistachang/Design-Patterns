@@ -2,6 +2,10 @@
 
 namespace DesignPatterns.Creational
 {
+    /// <summary>
+    /// Classes 'Me' and 'You' are implemented as singletons.
+    /// While the program is running, there can only be one instance of each class.
+    /// </summary>
     public class Singleton
     {
         public static void Run()
@@ -18,7 +22,7 @@ namespace DesignPatterns.Creational
 
         private Me() { }
 
-        public void Print() => Console.WriteLine("There's only one of me!");
+        public void Print() => Console.WriteLine("There's can only be one of me!");
     } 
 
     public class You
@@ -34,6 +38,6 @@ namespace DesignPatterns.Creational
             return _instance;
         }
 
-        public void Print() => Console.WriteLine("There's only one of you!");
+        public void Print() => Console.WriteLine("There's can only be one of you!");
     }
 }

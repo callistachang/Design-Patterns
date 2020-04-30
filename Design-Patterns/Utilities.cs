@@ -8,7 +8,7 @@ namespace DesignPatterns.Creational
 {
     public class Utilities
     {
-        public static Random rnd = new Random();
+        public static readonly Random rnd = new Random();
 
         public static T GetRandomEnum<T>()
         {

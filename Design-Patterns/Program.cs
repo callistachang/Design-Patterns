@@ -7,8 +7,16 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Singleton.Run();
+            Log.Info("== Creational Patterns ==");
             AbstractFactory.Run();
+            FactoryMethod.Run();
+            Singleton.Run();
+            Builder.Run();
+
+            Log.Info("== Structural Patterns ==");
+
+
+            Log.Info("== Behavioral Patterns ==");
         }
     }
 }

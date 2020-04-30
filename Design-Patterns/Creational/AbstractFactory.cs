@@ -2,6 +2,9 @@
 
 namespace DesignPatterns.Creational
 {
+    /// <summary>
+    /// Abstract factory 'IFoodShopFactory' and abstract products 'IFood' and 'IDrink' are created with concrete implementations.
+    /// </summary>
     public class AbstractFactory
     {
         public static void Run()
@@ -34,19 +37,17 @@ namespace DesignPatterns.Creational
         }
     }
 
-    public enum FoodShopType : byte
+    public enum FoodShopType
     {
         CoffeeShop,
         BubbleTeaShop
     }
 
-    #region Abstract Factory
     public interface IFoodShopFactory
     {
         public bool CreateDrink(out IDrink drink);
         public bool CreateFood(out IFood food);
     }
-    #endregion
 
     #region Concrete Factories
     public class CoffeeShopFactory : IFoodShopFactory
@@ -84,7 +85,6 @@ namespace DesignPatterns.Creational
     }
     #endregion
 
-    #region Abstract Products
     public interface IDrink
     {
         public void Print();
@@ -94,7 +94,6 @@ namespace DesignPatterns.Creational
     {
         public void Print();
     }
-    #endregion
 
     #region Concrete Products
     public class Coffee : IDrink

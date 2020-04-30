@@ -23,7 +23,7 @@ I just wanted to practice some design patterns by creating my own examples! :D
 :white_check_mark: Loose coupling between factory and concrete products.
 
 Abstract Factory | Factory Method
-- | -
+--- | ---
 Used to create families of related products | Used to create 1 product only
 Uses composition | Uses inheritance
 Implemented using a set of factory methods | -
